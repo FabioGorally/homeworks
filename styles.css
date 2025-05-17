@@ -28,7 +28,7 @@ body {
   background-color: #f9f9fa;
 }
 
-h1 {
+.title-small {
   font-size: 12px;
   text-align: center;
   background-image: linear-gradient(to right,#4343FF, #F96D6D);
@@ -38,7 +38,7 @@ h1 {
   font-weight: 800;
 }
 
-h2 {
+.title-big {
   font-family: 'GalanoGrotesque-Medium', sans-serif;
   font-size: 46px;
   text-align: center;
@@ -52,14 +52,13 @@ h2 {
   display: grid;
   grid-column-start: auto;
   grid-template-columns: repeat(3, minmax(0, 387px));
-  grid-template-rows: repeat(3, minmax(0, 225px));
+  grid-template-rows: repeat(2, minmax(0, 225px));
   grid-auto-flow: row;
-  column-gap: 35px;
-  row-gap: 35px;
+  gap: 35px;
   justify-content: center;
 }
 
-.cards {
+.card {
   background-color: #ffffff;
   padding: 22px;
 }
@@ -79,3 +78,110 @@ h2 {
   margin-top: 28px;
 }
 
+
+.page-second {
+  font-family: 'Source Sans 3', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 37px 45px 95px 26px;
+}
+
+
+.section-btn {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  height: 171px;
+  gap: 30px;
+  margin: 175.5px 0px 175.5px 135px;
+}
+
+.btn-title {
+  font-family: 'Roboto Condensed';
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 700px;
+  color: #56565a;
+}
+
+.bnt-text {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 22px;
+  color: #56565a;
+}
+
+.list {
+  display: inline;
+}
+
+.btn-button {
+  font-size: 16px;
+  font-weight: 600px;
+  line-height: 20px;
+  background-color: #0a467e;
+  color: #ffffff;
+  height: 44px;
+  width: 131px;
+}
+
+.btn-big {
+  width: 142px;
+  margin-right: 15px;
+}
+
+.section-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin: 60px 0px 60px 60px;
+  width: 555px;
+  height: 402px;
+}
+
+.case    { 
+  grid-column: 2;
+  grid-row: 1 / span 2;
+ }
+
+.block {
+  display: flex;
+  flex-direction: column;     
+  align-items: center;      
+  justify-content: center;    
+  text-align: center;  
+  color: #56565a;
+  background-color: #ededed;
+  width: 270px;
+  padding: 22px;
+  border: 1px solid ##ededed;  
+  border-radius: 5px; 
+}
+
+.case-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.case-line {
+  border: none;
+  height: 1px;
+  background-color: #e3e3e3;
+  margin: 15px 0; 
+  width: 170px;
+}
+
+.case-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.case-text {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 19px;
+}
